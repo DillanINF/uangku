@@ -165,6 +165,13 @@ export default function Sidebar() {
           />
 
           <MobileNavItem
+            icon={<ArrowLeftRight size={20} />}
+            text="Kategori"
+            href="/kategori"
+            active={pathname.startsWith("/kategori")}
+          />
+
+          <MobileNavItem
             icon={<PieChart size={20} />}
             text="Anggaran"
             href="/budgets"
