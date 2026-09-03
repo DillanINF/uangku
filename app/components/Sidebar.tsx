@@ -148,7 +148,7 @@ export default function Sidebar() {
       ===================================================== */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-800 bg-[#080e12]/95 px-2 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden">
 
-        <div className="grid grid-cols-5 gap-1 py-2">
+        <div className="grid grid-cols-6 gap-1 py-2">
 
           <MobileNavItem
             icon={<LayoutDashboard size={20} />}
