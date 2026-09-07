@@ -48,7 +48,7 @@ export default function RootLayout({
 
         <Sidebar />
 
-        <main className="ml-0 min-h-screen md:ml-[200px]">
+        <main className="ml-0 min-h-screen pb-20 md:ml-[200px] md:pb-8">
           {children}
         </main>
 

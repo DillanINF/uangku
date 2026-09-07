@@ -168,22 +168,22 @@ export default function KategoriPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#070d11] text-white">
-      <section className="flex-1 px-5 py-6 md:px-7">
+    <main className="min-h-screen bg-[#070d11] px-4 pb-24 pt-5 text-white sm:px-6 md:px-8 md:pb-8 md:pt-8">
+      <section className="flex-1">
 
         {/* HEADER */}
-        <div className="mb-7">
+        <div className="mb-6">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
               <Tag size={22} />
             </div>
 
             <div>
-              <h1 className="text-2xl font-bold">
+              <h1 className="text-xl font-bold sm:text-2xl">
                 Kategori
               </h1>
 
-              <p className="mt-1 text-sm text-slate-400">
+              <p className="mt-1 text-xs text-slate-400 sm:text-sm">
                 Kelola kategori pemasukan dan pengeluaranmu
               </p>
             </div>
@@ -191,9 +191,9 @@ export default function KategoriPage() {
         </div>
 
         {/* TAMBAH KATEGORI */}
-        <div className="mb-6 rounded-2xl border border-slate-800 bg-[#0b141a] p-5">
+        <div className="mb-4 rounded-2xl border border-slate-800 bg-[#0b141a] p-4 sm:mb-6 sm:p-5">
 
-          <h2 className="mb-4 font-semibold">
+          <h2 className="mb-3 text-sm font-semibold sm:mb-4 sm:text-base">
             Tambah Kategori
           </h2>
 
@@ -217,9 +217,9 @@ export default function KategoriPage() {
            <button
             type="button"
             onClick={addCategory}
-            className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-semibold text-black transition hover:bg-emerald-400"
+            className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-4 py-2.5 text-xs font-semibold text-black transition hover:bg-emerald-400 sm:px-5 sm:py-3 sm:text-sm"
            >
-  <Plus size={18} />
+  <Plus size={16} />
   Tambah
 </button>
 
@@ -229,12 +229,12 @@ export default function KategoriPage() {
         {/* DAFTAR KATEGORI */}
         <div className="rounded-2xl border border-slate-800 bg-[#0b141a]">
 
-          <div className="border-b border-slate-800 p-5">
-            <h2 className="font-semibold">
+          <div className="border-b border-slate-800 p-4 sm:p-5">
+            <h2 className="text-sm font-semibold sm:text-base">
               Daftar Kategori
             </h2>
 
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-[10px] text-slate-500 sm:text-xs">
               {categories.length} kategori tersedia
             </p>
           </div>
@@ -244,7 +244,7 @@ export default function KategoriPage() {
             {categories.map((category) => (
               <div
                 key={category.id}
-                className="flex items-center justify-between p-5"
+                className="flex items-center justify-between p-4 sm:p-5"
               >
 
                 <div className="flex items-center gap-4">

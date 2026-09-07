@@ -1,23 +1,10 @@
 {
-  "name": "UangKu - Manajemen Keuangan",
+  "name": "UangKu - Manage Uang Personal",
   "short_name": "UangKu",
-  "description": "Aplikasi manajemen keuangan pribadi",
+  "description": "Aplikasi untuk mengelola keuangan personal",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#070d11",
-  "theme_color": "#00c98d",
-  "orientation": "portrait",
-  "id": "/",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "background_color": "#07100c",
+  "theme_color": "#32dc78",
+  "orientation": "portrait"
 }

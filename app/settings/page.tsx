@@ -68,46 +68,46 @@ export default function SettingsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#070d11] text-white">
+    <main className="min-h-screen bg-[#070d11] px-4 pb-24 pt-5 text-white sm:px-6 md:px-8 md:pb-8 md:pt-8">
       {/* HEADER */}
-      <header className="border-b border-slate-800 px-5 py-6 md:px-7">
+      <header className="mb-6 border-b border-slate-800 pb-4 md:mb-8 md:pb-6">
         <div className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10">
             <Settings size={22} className="text-emerald-400" />
           </div>
 
           <div>
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-xl font-bold sm:text-2xl">
               Pengaturan
             </h1>
 
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-xs text-slate-400 sm:text-sm">
               Atur preferensi aplikasi UANGKU
             </p>
           </div>
         </div>
       </header>
 
-      <div className="space-y-5 px-5 py-6 md:px-7">
+      <div className="space-y-4 sm:space-y-5">
         {/* PROFIL */}
-        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-5">
+        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-4 sm:p-5">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
               <User size={19} className="text-blue-400" />
             </div>
 
             <div>
-              <h2 className="font-semibold">
+              <h2 className="text-sm font-semibold sm:text-base">
                 Profil
               </h2>
 
-              <p className="text-xs text-slate-500">
+              <p className="text-[10px] text-slate-500 sm:text-xs">
                 Informasi dasar pengguna
               </p>
             </div>
           </div>
 
-          <div className="mt-5 max-w-xl">
+          <div className="mt-4 max-w-xl sm:mt-5">
             <label className="mb-2 block text-xs text-slate-400">
               Nama Pengguna
             </label>
@@ -123,24 +123,24 @@ export default function SettingsPage() {
         </section>
 
         {/* PREFERENSI */}
-        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-5">
+        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-4 sm:p-5">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
               <Wallet size={19} className="text-emerald-400" />
             </div>
 
             <div>
-              <h2 className="font-semibold">
+              <h2 className="text-sm font-semibold sm:text-base">
                 Preferensi Keuangan
               </h2>
 
-              <p className="text-xs text-slate-500">
+              <p className="text-[10px] text-slate-500 sm:text-xs">
                 Atur mata uang yang digunakan
               </p>
             </div>
           </div>
 
-          <div className="mt-5 max-w-xl">
+          <div className="mt-4 max-w-xl sm:mt-5">
             <label className="mb-2 block text-xs text-slate-400">
               Mata Uang
             </label>
@@ -183,27 +183,27 @@ export default function SettingsPage() {
         </section>
 
         {/* DATA */}
-        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-5">
+        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-4 sm:p-5">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500/10">
               <Trash2 size={19} className="text-yellow-400" />
             </div>
 
             <div>
-              <h2 className="font-semibold">
+              <h2 className="text-sm font-semibold sm:text-base">
                 Manajemen Data
               </h2>
 
-              <p className="text-xs text-slate-500">
+              <p className="text-[10px] text-slate-500 sm:text-xs">
                 Kelola data yang tersimpan di perangkat
               </p>
             </div>
           </div>
 
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-4 flex flex-col gap-3 sm:mt-5 sm:flex-row">
             <button
               onClick={resetTransactions}
-              className="flex items-center justify-center gap-2 rounded-lg border border-slate-700 px-4 py-2.5 text-sm text-slate-300 transition hover:bg-slate-800"
+              className="flex items-center justify-center gap-2 rounded-lg border border-slate-700 px-4 py-2.5 text-xs text-slate-300 transition hover:bg-slate-800 sm:text-sm"
             >
               <RotateCcw size={16} />
               Hapus Transaksi
@@ -211,7 +211,7 @@ export default function SettingsPage() {
 
             <button
               onClick={() => setShowReset(true)}
-              className="flex items-center justify-center gap-2 rounded-lg border border-red-500/30 px-4 py-2.5 text-sm text-red-400 transition hover:bg-red-500/10"
+              className="flex items-center justify-center gap-2 rounded-lg bg-red-500 px-4 py-2.5 text-xs font-medium text-white transition hover:bg-red-400 sm:text-sm"
             >
               <Trash2 size={16} />
               Reset Semua Data
@@ -220,7 +220,7 @@ export default function SettingsPage() {
         </section>
 
         {/* INFO */}
-        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-5">
+        <section className="rounded-xl border border-slate-800 bg-[#0c151b] p-4 sm:p-5">
           <div className="flex items-start gap-3">
             <AlertTriangle
               size={18}

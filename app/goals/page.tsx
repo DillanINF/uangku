@@ -222,31 +222,31 @@ export default function GoalsPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#070d11] p-6 text-white md:p-8">
+    <main className="min-h-screen bg-[#070d11] px-4 pb-24 pt-5 text-white sm:px-6 md:px-8 md:pb-8 md:pt-8">
 
       {/* =====================================================
           HEADER
       ===================================================== */}
 
-      <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
+      <div className="mb-6 flex flex-col justify-between gap-4 md:mb-8 md:flex-row md:items-center">
 
         <div>
-          <p className="mb-1 text-sm text-slate-500">
+          <p className="mb-1 text-xs font-medium text-emerald-400 sm:text-sm">
             Rencanakan masa depanmu
           </p>
 
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-2xl font-bold sm:text-3xl">
             Tujuan Keuangan
           </h1>
 
-          <p className="mt-2 text-sm text-slate-400">
+          <p className="mt-1 text-xs text-slate-400 sm:mt-2 sm:text-sm">
             Buat dan pantau target keuangan yang ingin kamu capai.
           </p>
         </div>
 
         <button
           onClick={openAddForm}
-          className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-[#06100c] transition hover:bg-emerald-400"
+          className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-4 py-2.5 text-xs font-semibold text-[#06100c] transition hover:bg-emerald-400 sm:px-5 sm:py-3 sm:text-sm"
         >
           <Plus size={19} />
           Tambah Tujuan
@@ -258,7 +258,7 @@ export default function GoalsPage() {
           SUMMARY
       ===================================================== */}
 
-      <div className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 xl:grid-cols-4">
 
         <SummaryCard
           title="Total Target"
@@ -292,7 +292,7 @@ export default function GoalsPage() {
 
       {goals.length === 0 ? (
 
-        <section className="rounded-2xl border border-slate-800 bg-[#0b141a] p-12">
+        <section className="rounded-2xl border border-slate-800 bg-[#0b141a] p-8 sm:p-12">
 
           <div className="mx-auto max-w-md text-center">
 

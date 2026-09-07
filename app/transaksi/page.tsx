@@ -196,35 +196,35 @@ function handleDelete(id: number) {
 }
 
   return (
-    <main className="min-h-screen bg-[#070d11] p-6 text-white md:p-8">
+    <main className="min-h-screen bg-[#070d11] px-4 pb-24 pt-5 text-white sm:px-6 md:px-8 md:pb-8 md:pt-8">
 
       {/* HEADER */}
-      <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-center">
+      <div className="mb-6 flex flex-col justify-between gap-4 md:mb-8 md:flex-row md:items-center">
         <div>
-          <p className="mb-1 text-sm text-slate-500">
+          <p className="mb-1 text-xs font-medium text-emerald-400 sm:text-sm">
             Kelola keuanganmu
           </p>
 
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-2xl font-bold sm:text-3xl">
             Transaksi
           </h1>
 
-          <p className="mt-2 text-sm text-slate-400">
+          <p className="mt-1 text-xs text-slate-400 sm:mt-2 sm:text-sm">
             Catat dan pantau semua pemasukan serta pengeluaranmu.
           </p>
         </div>
 
         <button
           onClick={() => setShowForm(true)}
-          className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-[#06100c] transition hover:bg-emerald-400"
+          className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-4 py-2.5 text-xs font-semibold text-[#06100c] transition hover:bg-emerald-400 sm:px-5 sm:py-3 sm:text-sm"
         >
-          <Plus size={19} />
+          <Plus size={16} />
           Tambah Transaksi
         </button>
       </div>
 
       {/* SUMMARY */}
-      <div className="mb-8 grid gap-4 md:grid-cols-3">
+      <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mb-8 md:grid-cols-3">
 
         <SummaryCard
           title="Saldo"
@@ -250,24 +250,24 @@ function handleDelete(id: number) {
       <section className="rounded-2xl border border-slate-800 bg-[#0b141a]">
 
         {/* SECTION HEADER */}
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-800 p-5 md:flex-row md:items-center">
+        <div className="flex flex-col justify-between gap-3 border-b border-slate-800 p-4 sm:flex-row sm:items-center sm:gap-4 sm:p-5">
 
           <div>
-            <h2 className="font-semibold">
+            <h2 className="text-sm font-semibold sm:text-base">
               Semua Transaksi
             </h2>
 
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-[10px] text-slate-500 sm:text-xs">
               {transactions.length} transaksi tercatat
             </p>
           </div>
 
           <div className="flex items-center gap-2 rounded-lg border border-slate-800 bg-[#081015] px-3 py-2">
-            <Search size={17} className="text-slate-500" />
+            <Search size={16} className="text-slate-500" />
 
             <input
               placeholder="Cari transaksi..."
-              className="w-full bg-transparent text-sm text-white outline-none placeholder:text-slate-600 md:w-52"
+              className="w-full bg-transparent text-xs text-white outline-none placeholder:text-slate-600 sm:text-sm md:w-52"
             />
           </div>
 
